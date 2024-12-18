@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+WhatsApp Pattern Explorer
+Overview
 
-## Getting Started
+The WhatsApp Pattern Explorer is a web application that allows users to analyze WhatsApp chat exports (in .txt format) to identify key patterns, themes, and specific insights. Using the Google Gemini API, the application processes the chat content and provides a detailed analysis, helping users understand their activity, key motivations, and areas for improvement.
 
-First, run the development server:
+The app provides a simple and clean UI where users can upload their WhatsApp chat file, and it returns a structured analysis categorized into Key Themes, Specific Activities, Potential Improvements, and an Overall Summary.
+Features
 
-```bash
+    Upload WhatsApp Chat: Upload your WhatsApp chat file in .txt format.
+    AI-powered Analysis: Uses the Google Gemini API to analyze the chat content and return insights.
+    Structured Display: Insights are categorized for easy reading and understanding.
+    Dark Themed UI: The UI is designed with a modern dark theme for a pleasant user experience.
+    Responsive: The app is fully responsive, working well on both desktop and mobile devices.
+
+Table of Contents
+
+    Installation
+    How to Use
+    Testing the App
+    Project Structure
+    Technologies Used
+    API Integration
+    Environment Variables
+    Contributing
+
+Installation
+
+Follow these steps to get the project up and running on your local machine.
+Step 1: Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+git clone <repository-url>
+cd pattern
+
+Step 2: Install the dependencies
+
+Run the following command to install the necessary dependencies:
+
+npm install
+
+Step 3: Set Up Environment Variables
+
+Create a .env.local file in the root of the project and add your Gemini API Key like so:
+
+GEMINI_API_KEY=your_api_key_here
+
+To get your API key, you need to sign up for access to the Google Gemini API.
+Step 4: Run the Development Server
+
+Start the development server with the following command:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Step 5: Open the Application
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Navigate to http://localhost:3000 in your browser to start using the WhatsApp Pattern Explorer.
+Testing the App
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can test the app by uploading the sample .txt WhatsApp chat files located in the testfiles directory. These files contain example chat data and will allow you to see how the application analyzes different types of conversations.
