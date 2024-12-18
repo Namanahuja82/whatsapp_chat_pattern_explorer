@@ -14,8 +14,6 @@ The app provides a simple and clean UI where users can upload their WhatsApp cha
 
 ## Table of Contents
 - [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [API Integration](#api-integration)
 - [Environment Variables](#environment-variables)
@@ -56,7 +54,7 @@ Navigate to http://localhost:3000 in your browser to start using the WhatsApp Pa
 Test the App
 Two sample .txt files are provided in the testfiles directory to test the app's functionality.
 
-Technologies Used
+## Technologies Used
 
 Next.js: A React framework for building server-rendered React applications.
 
@@ -67,7 +65,7 @@ Tailwind CSS: A utility-first CSS framework for designing custom, responsive lay
 Axios: A promise-based HTTP client for making API requests to the Gemini API.
 
 
-API Integration
+## API Integration
 
 The app uses the Google Gemini API to analyze WhatsApp chat content. When a chat file is uploaded, the content is sent to the API, which processes it and returns key insights based on the text.
 Route for Analysis:
@@ -96,11 +94,11 @@ Example Response:
   "overallSummary": "The user demonstrates a high level of focus and proactive engagement..."
 }
 
-Environment Variables
+## Environment Variables
 
    GEMINI_API_KEY: The API key for Google Gemini. You can get this key from the Google Cloud Platform.
 
-Contributing
+## Contributing
 
 Feel free to contribute to this project by submitting issues, pull requests, or suggestions.
 Steps to Contribute:
