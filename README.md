@@ -55,6 +55,4 @@ npm run dev
 Step 5: Open the Application
 
 Navigate to http://localhost:3000 in your browser to start using the WhatsApp Pattern Explorer.
-Testing the App
 
-You can test the app by uploading the sample .txt WhatsApp chat files located in the testfiles directory. These files contain example chat data and will allow you to see how the application analyzes different types of conversations.
