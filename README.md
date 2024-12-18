@@ -57,7 +57,55 @@ Test the App
 Two sample .txt files are provided in the testfiles directory to test the app's functionality.
 
 Technologies Used
+
 Next.js: A React framework for building server-rendered React applications.
+
 Google Gemini API: AI-powered API used for analyzing chat content and generating insights.
+
 Tailwind CSS: A utility-first CSS framework for designing custom, responsive layouts quickly.
+
 Axios: A promise-based HTTP client for making API requests to the Gemini API.
+
+
+API Integration
+
+The app uses the Google Gemini API to analyze WhatsApp chat content. When a chat file is uploaded, the content is sent to the API, which processes it and returns key insights based on the text.
+Route for Analysis:
+
+   The /api/analyze route processes the uploaded chat file, sends the content to the Gemini API, and returns the analysis results.
+
+Example Response:
+
+{
+  "keyThemes": [
+    {
+      "category": "Product Development",
+      "analysis": "This is the dominant theme..."
+    },
+    {
+      "category": "Self-Improvement",
+      "analysis": "The user seeks ways to improve personal productivity..."
+    }
+  ],
+  "specificActivities": [
+    {
+      "category": "Research",
+      "analysis": "The user is researching various topics..."
+    }
+  ],
+  "overallSummary": "The user demonstrates a high level of focus and proactive engagement..."
+}
+
+Environment Variables
+
+   GEMINI_API_KEY: The API key for Google Gemini. You can get this key from the Google Cloud Platform.
+
+Contributing
+
+Feel free to contribute to this project by submitting issues, pull requests, or suggestions.
+Steps to Contribute:
+
+   Fork the repository.
+    Create a new branch for your feature or bugfix.
+    Make the necessary changes.
+    Submit a pull request with a clear description of what you've done.
